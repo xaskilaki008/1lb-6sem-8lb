@@ -31,6 +31,7 @@
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
+            font-family: DejaVu Sans Mono;
         }
 
         .head_nav ul li {

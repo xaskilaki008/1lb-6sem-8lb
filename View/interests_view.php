@@ -52,6 +52,7 @@ $categories = Interest::CATEGORIES;
             justify-content: center;
             margin: 0;
             padding: 0;
+            font-family: DejaVu Sans Mono;
         }
 
         .head_nav ul li {

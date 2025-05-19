@@ -51,6 +51,7 @@
         .head_nav ul li {
             margin: 0 12px;
             font-size: 16px;
+            font-family: DejaVu Sans Mono;
         }
 
         .head_nav ul li a {
