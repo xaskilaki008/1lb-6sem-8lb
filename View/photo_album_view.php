@@ -74,9 +74,9 @@ $titles = Photo::TITLES;
 
         .sitename {
             font-weight: bold;
-            color: #facc15;
             margin-right: auto;
-            padding-left: 20px;
+            padding-left: 24px;
+            color:rgb(170, 149, 120); /* яркий желтый акцент */
         }
 
         #clock {

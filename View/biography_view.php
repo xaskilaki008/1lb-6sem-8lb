@@ -68,8 +68,8 @@
         .sitename {
             font-weight: bold;
             margin-right: auto;
-            padding-left: 20px;
-            color: #facc15; /* яркий желтый акцент */
+            padding-left: 24px;
+            color:rgb(170, 149, 120); /* яркий желтый акцент */
         }
 
         main {
