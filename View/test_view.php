@@ -37,7 +37,7 @@
 
         /* Хедер и футер */
         header, footer {
-            background-color: #1e3a8a;
+            background-color: rgb(61, 85, 151);
             color: #fff;
             padding: 15px 0;
             text-align: center;

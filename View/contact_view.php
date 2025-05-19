@@ -18,7 +18,7 @@
         }
 
         header, footer {
-            background-color: #1e3a8a; /* яркий синий */
+            background-color: rgb(61, 85, 151); /* яркий синий */
             color: #fff;
             padding: 15px 0;
             text-align: center;
