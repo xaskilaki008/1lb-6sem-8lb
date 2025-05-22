@@ -151,25 +151,57 @@
         footer p {
             margin: 0;
         }
-
-        @media (max-width: 768px) {
-            .head_nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .head_nav ul li {
-                margin: 5px 0;
-            }
-
-            main {
-                margin: 20px;
-            }
-
-            .avatar img {
-                width: 150px;
-                height: 150px;
-            }
+        .division{
+            
+            margin-left: auto;
+            margin-right: auto;
+            display: block; 
+            margin: 0 auto; 
+        }
+        .button{
+            display: inline-block;
+            background: #2196f3;
+            color: #fff;
+            padding: 12px;
+            border-radius: 3px;
+            text-decoration: none;
+            font-family: Tahoma;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 100;
+        }
+        button{
+            display: inline-block;
+            background: #2196f3;
+            color: #fff;
+            padding: 12px;
+            border: white;
+            border-radius: 13px;
+            text-decoration: none;
+            font-family: Tahoma;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 100;
+            margin: 0 auto;
+            transition: all 0.6s ease; /* Добавляем плавный переход для всех изменяемых свойств */
+            cursor: pointer; /* Добавляем указатель при наведении */
+        }
+        button:hover{
+            display: inline-block;
+            background:rgb(33, 208, 243);
+            border: black;
+            border-color: #1e3a8a;
+            color: #fff;
+            padding: 12px;
+            padding-left: 30px;
+            padding-right: 100px;
+            border-radius: 13px;
+            text-decoration: none;
+            font-family: Tahoma;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 100;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -189,20 +221,36 @@
             </ul>
         </nav>
     </header>
+    <div class="division">
+        <p>
+            Ты попал на страницу Тыц Тыц тыц <br>
+        </p>
+        <a href="#" class="button">Не нажимать</a>
+        <br><br><br><br>
+        <button>Привет</button>
+    </div>
+    <div>
+        <img src="../example/16.png" alt="" width="90px" hight=auto>
+    </div>
+<script>
+        $(document).ready(function() {
+            $('#openModalButton').click(function() {
+                $('#modal').show();
+                $('#overlay').show();
+            });
 
-    <main>
-        <div class="avatar">
-            <img src="example/1.jpg" alt="Моя аватарка">
-        </div>
-        <div class="main_content">
-            <h1><?php echo $user->getName(); ?></h1>
-            <h2><?php echo $user->getGroup(); ?></h2>
-            <p>Лабораторная №1</p>
-        </div>
-    </main>
+            $('#closeModal').click(function() {
+                $('#modal').hide();
+                $('#overlay').hide();
+            });
 
-    <footer>
-        <p>&copy; 2025 Моя Персональная Страница</p>
-    </footer>
+            $('#clearForm').click(function() {
+                $('#contactForm')[0].reset();
+                $('.error').remove();
+                $('#modal').hide();
+                $('#overlay').hide();
+            });
+        });
+    </script>
 </body>
 </html>

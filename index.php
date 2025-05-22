@@ -6,6 +6,7 @@ require_once '../mysite/Controller/IndexController.php';
 require_once '../mysite/Controller/InterestsController.php';
 require_once '../mysite/Controller/PhotoController.php';
 require_once '../mysite/Controller/TestController.php';
+require_once '../mysite/Controller/TutctucController.php';
 
 $page = $_GET['page'] ?? 'index';
 
@@ -23,6 +24,7 @@ $routes = [
     'interests'  => ['controller' => 'InterestsController', 'method' => 'show'],
     'photo'      => ['controller' => 'PhotoController', 'method' => 'show'],
     'test'       => ['controller' => 'TestController', 'method' => 'index'],
+    'tutctuc'    => ['controller' => 'TutctucController', 'method' => 'index']
 ];
 
 if (!isset($routes[$page])) {

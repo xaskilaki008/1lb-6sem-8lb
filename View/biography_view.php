@@ -140,6 +140,8 @@
             <p>Мобильные телефоны: <?php echo $biography->getContact(); ?></p>
         </div>
     </main>
+    
+</div>
     <footer>
         <p>&copy; 2025 Моя Персональная Страница</p>
     </footer>
