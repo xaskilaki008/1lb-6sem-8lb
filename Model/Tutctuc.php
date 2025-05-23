@@ -1,13 +1,12 @@
 <?php
 class Tutctuc {
-    private $helloworld;
+    private $message;
 
-    public function __construct($helloworld) {
-        $this->helloworld = $helloworld;
+    public function __construct($message) {
+        $this->message = $message;
     }
 
-    public function getButton() {
-        return $this->helloworld;
+    public function getMessage() {
+        return $this->message;
     }
 }
-?>

@@ -222,14 +222,39 @@
             </ul>
         </nav>
     </header>
+    <!-- В разделе body, где находится кнопка -->
     <div class="division">
-        <button id="HelloWorld">Привет</button>
+        <form method="POST">
+            <button type="submit" name="show_hello">Привет</button>
+        </form>
+        
+        <?php if (isset($showMessage) && $showMessage): ?>
+            <div id="hello-text" style="margin-top: 20px; font-size: 18px; color: #1e3a8a;">
+                <?php echo (new Tutctuc("Hello world!"))->getMessage(); ?>
+            </div>
+        <?php endif; ?>
     </div>
     <div>
         <img src="../example/16.png" alt="" width="90px" hight=auto>
     </div>
     <script>
-
+        $(document).ready(function() {
+            $('button[name="show_hello"]').click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '../mysite/Controller/TutctucController.php',
+                    method: 'POST',
+                    data: { show_hello: true },
+                    success: function(response) {
+                        // Создаем элемент с текстом, если его еще нет
+                        if (!$('#hello-text').length) {
+                            $('<p id="hello-text" style="margin-top: 20px; font-size: 18px; color: #1e3a8a;">Hello world!</p>')
+                                .insertAfter('button[name="show_hello"]');
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
