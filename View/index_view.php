@@ -117,23 +117,37 @@
         }
 
         .avatar {
-            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
         }
 
         .avatar img {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: auto;
             object-fit: cover;
             border-radius: 10%;
-            border: 4px solid #1e3a8a;
-            transition: all 0.4s ease;
+            border: 8px solid #1e3a8a;
+            transition: all 0.6s ease 0.2s;
             position: relative;
         }
         .avatar img:hover {
-            border: 14px solid #A52A2A;
-            border-radius: 50%;
+            border: 1px solid #A52A2A;
+            border-radius: 5% 50% 50% 50%;
             transform: rotate(360deg);
             padding-left: 150px;
+        }
+        .avatar-text {
+            position: absolute;
+            left: 0%;
+            top: 20%;
+            opacity: 0;
+            margin-left: 20px;
+            white-space: nowrap;
+            transition: all 0.3s ease 0.2s;
+        }
+        .avatar:hover .avatar-text {
+            opacity: 1;
+            position: absolute;
         }
         .main_content h1 {
             font-size: 28px;
@@ -200,6 +214,7 @@
     <main>
         <div class="avatar">
             <img src="example/1.jpg" alt="Моя аватарка">
+            <span class="avatar-text">Шпаков Пётр <br> студент 3 курса,<br>в будующем веб<br>не разработчик</span>
         </div>
         <div class="main_content">
             <h1><?php echo $user->getName(); ?></h1>
