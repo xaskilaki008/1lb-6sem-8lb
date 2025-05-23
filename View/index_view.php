@@ -124,7 +124,7 @@
             width: 200px;
             height: 200px;
             object-fit: cover;
-            border-radius: 50%;
+            border-radius: 10%;
             border: 4px solid #1e3a8a;
         }
 
