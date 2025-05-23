@@ -3,10 +3,11 @@ require_once '../mysite/Model/Tutctuc.php';
 
 class TutctucController {
     public function index() {
-        $model = new Tutctuc("Hello world from Model!");
-        
-        // Передаем сообщение из модели в view
-        $helloText = $model->getMessage();
+        //Через создание экземпляра модели
+        $model = new Tutctuc(); // Используется значение из константы ->
+    // $helloText = $model->getMessage();
+    // Прямой доступ к константе без создания экземпляра->
+        $helloText = Tutctuc::MessagerHello;
         
         require '../mysite/View/tutctuc_view.php';
     }
