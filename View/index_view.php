@@ -126,8 +126,15 @@
             object-fit: cover;
             border-radius: 10%;
             border: 4px solid #1e3a8a;
+            transition: all 0.4s ease;
+            position: relative;
         }
-
+        .avatar img:hover {
+            border: 14px solid #A52A2A;
+            border-radius: 50%;
+            transform: rotate(360deg);
+            padding-left: 150px;
+        }
         .main_content h1 {
             font-size: 28px;
             margin: 10px 0 5px;
