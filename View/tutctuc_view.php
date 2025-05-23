@@ -223,19 +223,22 @@
         </nav>
     </header>
     <!-- В разделе body, где находится кнопка -->
-    <div class="division">
+<div class="division">
+    <!-- Кнопка -->
     <button id="helloButton">Привет</button>
+    
+    <!-- Блок для текста (изначально скрыт) -->
     <div id="hello-text" style="display: none; margin-top: 20px; font-size: 18px; color: #1e3a8a;">
-        Hello world!
+        <?php echo htmlspecialchars($helloText); ?>
     </div>
 </div>
     <div>
         <img src="../example/16.png" alt="" width="90px" hight=auto>
     </div>
 <script>
-        document.getElementById('helloButton').addEventListener('click', function() {
-            document.getElementById('hello-text').style.display = 'block';
-        });
+    document.getElementById('helloButton').addEventListener('click', function() {
+        document.getElementById('hello-text').style.display = 'block';
+    });
 </script>
 </body>
 </html>

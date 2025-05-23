@@ -3,10 +3,10 @@ require_once '../mysite/Model/Tutctuc.php';
 
 class TutctucController {
     public function index() {
-        $model = new Tutctuc("Hello world!");
+        $model = new Tutctuc("Hello world from Model!");
         
-        // Проверяем, была ли нажата кнопка
-        $showMessage = isset($_POST['show_hello']);
+        // Передаем сообщение из модели в view
+        $helloText = $model->getMessage();
         
         require '../mysite/View/tutctuc_view.php';
     }
