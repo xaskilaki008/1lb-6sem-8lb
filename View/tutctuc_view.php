@@ -157,6 +157,7 @@
             margin-right: auto;
             display: block; 
             margin: 0 auto; 
+            margin-top: 100px;
         }
         .button{
             display: inline-block;
@@ -183,8 +184,8 @@
             line-height: 1;
             font-weight: 100;
             margin: 0 auto;
-            transition: all 0.6s ease; /* Добавляем плавный переход для всех изменяемых свойств */
-            cursor: pointer; /* Добавляем указатель при наведении */
+            transition: all 0.6s ease;
+            cursor: pointer; 
         }
         button:hover{
             display: inline-block;
@@ -202,6 +203,8 @@
             line-height: 1;
             font-weight: 100;
             margin: 0 auto;
+        }
+        
         }
     </style>
 </head>
@@ -222,35 +225,13 @@
         </nav>
     </header>
     <div class="division">
-        <p>
-            Ты попал на страницу Тыц Тыц тыц <br>
-        </p>
-        <a href="#" class="button">Не нажимать</a>
-        <br><br><br><br>
-        <button>Привет</button>
+        <button id="HelloWorld">Привет</button>
     </div>
     <div>
         <img src="../example/16.png" alt="" width="90px" hight=auto>
     </div>
-<script>
-        $(document).ready(function() {
-            $('#openModalButton').click(function() {
-                $('#modal').show();
-                $('#overlay').show();
-            });
+    <script>
 
-            $('#closeModal').click(function() {
-                $('#modal').hide();
-                $('#overlay').hide();
-            });
-
-            $('#clearForm').click(function() {
-                $('#contactForm')[0].reset();
-                $('.error').remove();
-                $('#modal').hide();
-                $('#overlay').hide();
-            });
-        });
     </script>
 </body>
 </html>
