@@ -174,6 +174,8 @@
         button{
             display: inline-block;
             background: #2196f3;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
             color: #fff;
             padding: 12px;
             border: white;
@@ -189,10 +191,10 @@
         }
         button:hover{
             display: inline-block;
-            background:rgb(33, 208, 243);
-            border: black;
+            background:rgb(255, 255, 255);
+            border-style: solid;
             border-color: #1e3a8a;
-            color: #fff;
+            color: #1e3a8a;
             padding: 12px;
             padding-left: 30px;
             padding-right: 100px;
@@ -222,18 +224,16 @@
             </ul>
         </nav>
     </header>
-    <!-- В разделе body, где находится кнопка -->
-<div class="division">
-    <!-- Кнопка -->
-    <button id="helloButton">Привет</button>
-    
-    <!-- Блок для текста (изначально скрыт) -->
-    <div id="hello-text" style="display: none; margin-top: 20px; font-size: 18px; color: #1e3a8a;">
-        <?php echo htmlspecialchars($helloText); ?>
-    </div>
-</div>
     <div>
         <img src="../example/16.png" alt="" width="90px" hight=auto>
+    </div>
+    <div class="division">
+        
+        <button id="helloButton">Привет</button>
+        
+        <div id="hello-text" style="display: none; margin-top: 20px; font-size: 18px; color: #1e3a8a;">
+            <?php echo htmlspecialchars($helloText); ?>
+        </div>
     </div>
 <script>
     document.getElementById('helloButton').addEventListener('click', function() {
