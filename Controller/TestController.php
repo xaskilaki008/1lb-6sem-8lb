@@ -1,7 +1,7 @@
 <?php
 // controllers/TestController.php
-require_once '../mysite/Model/CustomFormValidation.php';
-require_once '../mysite/Model/ResultVerification.php';
+require_once '../Model/CustomFormValidation.php';
+require_once '../Model/ResultVerification.php';
 
 class TestController {
     private $validator;

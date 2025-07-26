@@ -1,12 +1,12 @@
 <?php
-require_once '../mysite/Controller/BiographyController.php';
-require_once '../mysite/Controller/ContactController.php';
-require_once '../mysite/Controller/EducationController.php';
-require_once '../mysite/Controller/IndexController.php';
-require_once '../mysite/Controller/InterestsController.php';
-require_once '../mysite/Controller/PhotoController.php';
-require_once '../mysite/Controller/TestController.php';
-require_once '../mysite/Controller/TutctucController.php';
+require_once './Controller/BiographyController.php';
+require_once './Controller/ContactController.php';
+require_once './Controller/EducationController.php';
+require_once './Controller/IndexController.php';
+require_once './Controller/InterestsController.php';
+require_once './Controller/PhotoController.php';
+require_once './Controller/TestController.php';
+require_once './Controller/TutctucController.php';
 
 $page = $_GET['page'] ?? 'index';
 

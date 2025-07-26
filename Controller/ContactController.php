@@ -1,6 +1,6 @@
 <?php
 // controllers/ContactController.php
-require_once '../mysite/Model/FormValidation.php';
+require_once '../Model/FormValidation.php';
 
 class ContactController {
     private $validator;
@@ -38,7 +38,7 @@ class ContactController {
             }
         }
 
-        include '../mysite/View/contact_view.php';
+        include '../View/contact_view.php';
     }
 }
 ?>

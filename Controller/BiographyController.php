@@ -1,5 +1,5 @@
 <?php
-require_once '../mysite/Model/Biography.php';
+require_once '../Model/Biography.php';
 
 class BiographyController {
     public function index() {
@@ -11,7 +11,7 @@ class BiographyController {
             "не женат",
             "Iphone 17 2026, но правду не скажу"
         );
-        require '../mysite/View/biography_view.php';
+        require '../View/biography_view.php';
     }
 }
 ?>
