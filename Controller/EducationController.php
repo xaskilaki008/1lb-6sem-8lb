@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../Model/Education.php';
+require_once '../Model/Education.php';
 
 class EducationController {
     private $model;
@@ -10,7 +10,7 @@ class EducationController {
 
     public function index() {
         $curriculum = $this->model->getCurriculum();
-        include __DIR__ . '/../View/education_view.php';
+        include '../View/education_view.php';
     }
 }
 ?>

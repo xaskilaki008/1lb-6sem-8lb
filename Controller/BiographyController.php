@@ -1,17 +1,17 @@
 <?php
-require_once __DIR__ . '/../Model/Biography.php';
+require_once '../Model/Biography.php';
 
 class BiographyController {
     public function index() {
         $biography = new Biography(
             "Шпаков П.Н,",
-            "секрет",
+            "21.01.2005",
             "город Симферополь",
             "ФГАОУ ВО «Севастопольский государственный университет» на направлении 'Прикладная информатика'",
             "не женат",
-            "а нету телефона"
+            "Iphone 17 2026, но правду не скажу"
         );
-        require __DIR__ . '/../View/biography_view.php';
+        require '../View/biography_view.php';
     }
 }
 ?>
