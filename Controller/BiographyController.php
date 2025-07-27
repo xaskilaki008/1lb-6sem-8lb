@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../Model/Biography.php';
+require_once __DIR__ . '/..1lb(8lb)/Model/Biography.php';
 
 class BiographyController {
     public function index() {
@@ -11,7 +11,7 @@ class BiographyController {
             "не женат",
             "а нету телефона"
         );
-        require __DIR__ . '/../View/biography_view.php';
+        require __DIR__ . '../View/biography_view.php';
     }
 }
 ?>

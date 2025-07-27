@@ -11,8 +11,8 @@ $titles = Photo::TITLES;
     <meta charset="UTF-8">
     <title>Фотоальбом - Персональная страничка</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../JScode/date_viewer.js"></script>
-    <script src="../JScode/history.js"></script>
+    <script src="/JScode/date_viewer.js"></script>
+    <script src="/JScode/history.js"></script>
     <style>
         body {
             margin: 0;

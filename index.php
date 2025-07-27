@@ -14,7 +14,6 @@ foreach ($controllers as $controller) {
     require_once __DIR__ . "/Controller/{$controller}.php";
 }
 
-
 $page = $_GET['page'] ?? 'index';
 
 $page = trim($page, '/');

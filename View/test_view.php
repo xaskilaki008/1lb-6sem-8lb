@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <title>Тест по дисциплине</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="JScode/formreq.js"></script>
-    <script src="JScode/date_viewer.js"></script>
-    <script src="JScode/history.js"></script>
+    <script src="/JScode/formreq.js"></script>
+    <script src="/JScode/date_viewer.js"></script>
+    <script src="/JScode/history.js"></script>
     <style>
         /* Общие стили для тела и шрифтов */
         body {
