@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/Tutctuc.php';
+require_once __DIR__ . '/../Model/Tutctuc.php';
 
 class TutctucController {
     public function index() {
@@ -9,6 +9,6 @@ class TutctucController {
     // Прямой доступ к константе без создания экземпляра->
         $helloText = Tutctuc::MessagerHello;
         
-        require '../View/tutctuc_view.php';
+        require __DIR__ . '/../View/tutctuc_view.php';
     }
 }

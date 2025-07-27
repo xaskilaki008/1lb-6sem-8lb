@@ -1,7 +1,7 @@
 <?php
 // controllers/TestController.php
-require_once '../Model/CustomFormValidation.php';
-require_once '../Model/ResultVerification.php';
+require_once __DIR__ . '/../Model/CustomFormValidation.php';
+require_once __DIR__ . '/../Model/ResultVerification.php';
 
 class TestController {
     private $validator;
@@ -30,7 +30,7 @@ class TestController {
             }
         }
 
-        include '../mysite/View/test_view.php';
+        include __DIR__ . '/../mysite/View/test_view.php';
     }
 }
 ?>

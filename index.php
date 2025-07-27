@@ -1,12 +1,19 @@
 <?php
-require_once './Controller/BiographyController.php';
-require_once './Controller/ContactController.php';
-require_once './Controller/EducationController.php';
-require_once './Controller/IndexController.php';
-require_once './Controller/InterestsController.php';
-require_once './Controller/PhotoController.php';
-require_once './Controller/TestController.php';
-require_once './Controller/TutctucController.php';
+$controllers = [
+    'BiographyController',
+    'ContactController',
+    'EducationController',
+    'IndexController',
+    'InterestsController',
+    'PhotoController',
+    'TestController',
+    'TutctucController'
+];
+
+foreach ($controllers as $controller) {
+    require_once __DIR__ . "/Controller/{$controller}.php";
+}
+
 
 $page = $_GET['page'] ?? 'index';
 
