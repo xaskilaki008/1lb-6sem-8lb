@@ -1,6 +1,6 @@
 <?php
 // controllers/ContactController.php
-require_once '../Model/FormValidation.php';
+require_once '../1lb-6sem-8lb/Model/FormValidation.php';
 
 class ContactController {
     private $validator;

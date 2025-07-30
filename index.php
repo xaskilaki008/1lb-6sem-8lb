@@ -1,13 +1,22 @@
 <?php
-require_once './Controller/BiographyController.php';
-require_once './Controller/ContactController.php';
-require_once './Controller/EducationController.php';
-require_once './Controller/IndexController.php';
-require_once './Controller/InterestsController.php';
-require_once './Controller/PhotoController.php';
-require_once './Controller/TestController.php';
-require_once './Controller/TutctucController.php';
+// Автозагрузка классов
+spl_autoload_register(function ($class) {
+    $paths = [
+        'Controller/',
+        'Model/',
+        'View/'
+    ];
+    
+    foreach ($paths as $path) {
+        $file = __DIR__ . '/' . $path . $class . '.php';
+        if (file_exists($file)) {
+            require_once $file;
+            return;
+        }
+    }
+});
 
+// Остальной код...
 $page = $_GET['page'] ?? 'index';
 
 $page = trim($page, '/');

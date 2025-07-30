@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/Biography.php';
+require_once '../1lb-6sem-8lb/Model/Biography.php';
 
 class BiographyController {
     public function index() {

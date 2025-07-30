@@ -1,7 +1,7 @@
 <?php
 // controllers/TestController.php
-require_once '../Model/CustomFormValidation.php';
-require_once '../Model/ResultVerification.php';
+require_once '../1lb-6sem-8lb/Model/CustomFormValidation.php';
+require_once '../1lb-6sem-8lb/Model/ResultVerification.php';
 
 class TestController {
     private $validator;
@@ -30,7 +30,7 @@ class TestController {
             }
         }
 
-        include '../mysite/View/test_view.php';
+        include '../1lb-6sem-8lb/mysite/View/test_view.php';
     }
 }
 ?>

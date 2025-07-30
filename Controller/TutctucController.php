@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/Tutctuc.php';
+require_once '../1lb-6sem-8lb/Model/Tutctuc.php';
 
 class TutctucController {
     public function index() {
@@ -8,6 +8,6 @@ class TutctucController {
         // Передаем сообщение из модели в view
         $helloText = $model->getMessage();
         
-        require '../View/tutctuc_view.php';
+        require '../1lb-6sem-8lb/View/tutctuc_view.php';
     }
 }

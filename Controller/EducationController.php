@@ -1,5 +1,5 @@
 <?php
-require_once '../Model/Education.php';
+require_once '../1lb-6sem-8lb/Model/Education.php';
 
 class EducationController {
     private $model;
@@ -10,7 +10,7 @@ class EducationController {
 
     public function index() {
         $curriculum = $this->model->getCurriculum();
-        include '../View/education_view.php';
+        include '../1lb-6sem-8lb/View/education_view.php';
     }
 }
 ?>
