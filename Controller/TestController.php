@@ -30,7 +30,7 @@ class TestController {
             }
         }
 
-        include '../1lb-6sem-8lb/mysite/View/test_view.php';
+        include '../1lb-6sem-8lb/View/test_view.php';
     }
 }
 ?>

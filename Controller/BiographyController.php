@@ -11,7 +11,7 @@ class BiographyController {
             "не женат",
             "Iphone 17 2026, но правду не скажу"
         );
-        require '../View/biography_view.php';
+        require '../1lb-6sem-8lb/View/biography_view.php';
     }
 }
 ?>

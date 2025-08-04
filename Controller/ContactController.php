@@ -38,7 +38,7 @@ class ContactController {
             }
         }
 
-        include '../View/contact_view.php';
+        include '../1lb-6sem-8lb/View/contact_view.php';
     }
 }
 ?>
