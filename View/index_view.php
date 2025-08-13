@@ -78,7 +78,11 @@
             margin-left: auto;
             padding-right: 20px;
         }
-
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
         .dropdown-content {
             display: none;
             position: absolute;
@@ -212,6 +216,7 @@
     </header>
 
     <main>
+        <h1>Главная</h1>
         <div class="avatar">
             <img src="example/1.jpg" alt="Моя аватарка">
             <span class="avatar-text">Шпаков Пётр <br> студент 3 курса,<br>в будующем веб<br>не разработчик</span>

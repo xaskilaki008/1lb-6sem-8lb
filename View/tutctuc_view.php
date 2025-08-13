@@ -210,17 +210,18 @@
 </head>
 <body>
     <header>
-        <nav class="head_nav">
+        <nav class="head_nav" role="navigation" aria-label="Главное меню">
             <ul>
-                <li class="sitename">Персональный сайт</li>
-                <li><a href="../index">Главная</a></li>
-                <li><a href="../biography">Обо мне</a></li>
-                <li><a href="../interests">Интересы</a></li>
-                <li><a href="../photo">Фотоальбом</a></li>
-                <li><a href="../contact">Контакт</a></li>
-                <li><a href="../test">Тест</a></li>
+                <li class="sitename">Персональный сайт
+                <li><a href="../index">Главная</a>
+                <li><a href="../biography">Обо мне</a>
+                <li><a href="../interests">Интересы</a>
+                <li><a href="../education">Учёба</a>
+                <li><a href="../photo">Фотоальбом</a>
+                <li><a href="../contact">Контакт</a>
+                <li><a href="../test">Тест</a>
                 <li><a href="../tutctuc">Тыц</a></li>
-                <li id="clock"></li>
+                <li id="clock">
             </ul>
         </nav>
     </header>

@@ -118,6 +118,7 @@
             <ul>
                 <li class="sitename">Персональный сайт</li>
                 <li><a href="../index">Главная</a></li>
+                <li><a href="../biography">Обо мне</a></li>
                 <li><a href="../interests" class="dropdown-toggle">Интересы</a></li>
                 <li><a href="../education">Учёба</a></li>
                 <li><a href="../photo">Фотоальбом</a></li>

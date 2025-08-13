@@ -164,6 +164,7 @@ $titles = Photo::TITLES;
                 <li><a href="../biography">Обо мне</a></li>
                 <li><a href="../interests">Интересы</a></li>
                 <li><a href="../education">Учёба</a></li>
+                <li><a href="../photo_album">Фотоальбом</a></li>
                 <li><a href="../contact">Контакт</a></li>
                 <li><a href="../test">Тест</a></li>
                 <li id="clock"></li>

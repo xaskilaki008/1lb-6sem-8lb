@@ -146,6 +146,7 @@
                 <li><a href="../index">Главная</a></li>
                 <li><a href="../biography">Обо мне</a></li>
                 <li><a href="../interests">Интересы</a></li>
+                <li><a href="../education">Учёба</a></li>
                 <li><a href="../photo">Фотоальбом</a></li>
                 <li><a href="../contact">Контакт</a></li>
                 <li><a href="../test">Тест</a></li>
