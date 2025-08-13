@@ -50,7 +50,11 @@
 
         .head_nav ul li {
             margin: 0 12px;
+            font: bold 3em/2em Arial, sans-serif;
             font-size: 16px;
+             overflow: hidden; /* обрезает текст */
+            text-overflow: ellipsis; /* добавляет "..." если текст обрезан (работает с white-space: nowrap) */
+            white-space: nowrap;
         }
 
         .head_nav ul li a {
@@ -77,7 +81,7 @@
             margin: 40px auto;
             padding: 20px;
             background-color: #ffffff;
-            border-radius: 8px;
+            border-radius: 0px 10px 10px 80px;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
         }
 

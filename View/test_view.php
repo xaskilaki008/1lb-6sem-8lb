@@ -27,6 +27,7 @@
         /* Контейнер контента */
         main {
             flex: 1;
+            min-width: 800px;
             max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
@@ -54,8 +55,11 @@
 
         .head_nav ul li {
             margin: 0 12px;
+            font: bold 3em/2em Arial, sans-serif;
             font-size: 16px;
-            font-family: DejaVu Sans Mono;
+             overflow: hidden; /* обрезает текст */
+            text-overflow: ellipsis; /* добавляет "..." если текст обрезан (работает с white-space: nowrap) */
+            white-space: nowrap;
             position: relative;
         }
 
